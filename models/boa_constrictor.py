@@ -10,12 +10,12 @@ class Boa(AnimalExotico):
         return "¡Tsss!"
     
     def add_mouse(self):
-        if self.eaten_mice == 10:
+        if self.eaten_mice == 20:
             raise ValueError("Demasiados Ratones!.")
         self.eaten_mice += 1
 
     def feed_boa(self) -> str:
-        if self.eaten_mice == 10:
+        if self.eaten_mice == 20:
             return "La boa está llena"
         self.eaten_mice += 1
         return "Exito"
